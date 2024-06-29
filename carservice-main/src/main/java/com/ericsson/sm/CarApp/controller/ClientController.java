@@ -2,6 +2,7 @@ package com.ericsson.sm.CarApp.controller;
 
 import com.ericsson.sm.CarApp.dto.ClientRequestDto;
 import com.ericsson.sm.CarApp.dto.ClientResponseDto;
+import com.ericsson.sm.CarApp.dto.ClientResponseDtowithID;
 import com.ericsson.sm.CarApp.service.ClientService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -23,9 +24,9 @@ public class ClientController  {
     }
 
     @GetMapping("/api/customers")
-    public Page<ClientResponseDto> getAll(@RequestParam(name="firstname",required = false) String firstName,
-                                          @RequestParam(name="lastname",required = false) String lastname,
-                                          Pageable pageable){
+    public Page<ClientResponseDtowithID> getAll(@RequestParam(name="firstname",required = false) String firstName,
+                                                @RequestParam(name="lastname",required = false) String lastname,
+                                                Pageable pageable){
         return clientService.getAll(firstName,lastname,pageable);
     }
 

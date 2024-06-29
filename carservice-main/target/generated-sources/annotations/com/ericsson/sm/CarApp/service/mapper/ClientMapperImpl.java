@@ -4,6 +4,7 @@ import com.ericsson.sm.CarApp.dto.CarResponseDto;
 import com.ericsson.sm.CarApp.dto.CarServiceResponseDto;
 import com.ericsson.sm.CarApp.dto.ClientRequestDto;
 import com.ericsson.sm.CarApp.dto.ClientResponseDto;
+import com.ericsson.sm.CarApp.dto.ClientResponseDtowithID;
 import com.ericsson.sm.CarApp.model.Car;
 import com.ericsson.sm.CarApp.model.CarService;
 import com.ericsson.sm.CarApp.model.Client;
@@ -14,7 +15,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-06-26T21:21:41+0200",
+    date = "2024-06-29T20:09:42+0200",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 18.0.1.1 (Oracle Corporation)"
 )
 @Component
@@ -39,6 +40,28 @@ public class ClientMapperImpl implements ClientMapper {
         clientResponseDto.setCars( carListToCarResponseDtoList( client.getCars() ) );
 
         return clientResponseDto;
+    }
+
+    @Override
+    public ClientResponseDtowithID toDtowithID(Client client) {
+        if ( client == null ) {
+            return null;
+        }
+
+        ClientResponseDtowithID clientResponseDtowithID = new ClientResponseDtowithID();
+
+        clientResponseDtowithID.setId( client.getId() );
+        clientResponseDtowithID.setFirstName( client.getFirstName() );
+        clientResponseDtowithID.setLastName( client.getLastName() );
+        clientResponseDtowithID.setOib( client.getOib() );
+        clientResponseDtowithID.setCity( client.getCity() );
+        clientResponseDtowithID.setStreet( client.getStreet() );
+        clientResponseDtowithID.setStreetNumber( client.getStreetNumber() );
+        clientResponseDtowithID.setZipCode( client.getZipCode() );
+        clientResponseDtowithID.setCountry( client.getCountry() );
+        clientResponseDtowithID.setCars( carListToCarResponseDtoList( client.getCars() ) );
+
+        return clientResponseDtowithID;
     }
 
     @Override

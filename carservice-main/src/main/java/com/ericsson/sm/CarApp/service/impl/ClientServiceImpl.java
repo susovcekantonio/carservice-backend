@@ -2,6 +2,7 @@ package com.ericsson.sm.CarApp.service.impl;
 
 import com.ericsson.sm.CarApp.dto.ClientRequestDto;
 import com.ericsson.sm.CarApp.dto.ClientResponseDto;
+import com.ericsson.sm.CarApp.dto.ClientResponseDtowithID;
 import com.ericsson.sm.CarApp.model.Car;
 import com.ericsson.sm.CarApp.model.Client;
 import com.ericsson.sm.CarApp.repository.ClientRepository;
@@ -41,8 +42,8 @@ public class ClientServiceImpl implements ClientService {
     }
 
     @Override
-    public Page<ClientResponseDto> getAll(String firstName, String lastName, Pageable pageable) {
-            return clientRepository.findByFirstOrLastName(firstName,lastName,pageable).map(clientMapper::toDto);
+    public Page<ClientResponseDtowithID> getAll(String firstName, String lastName, Pageable pageable) {
+            return clientRepository.findByFirstOrLastName(firstName,lastName,pageable).map(clientMapper::toDtowithID);
         }
 
     @Override
@@ -70,7 +71,7 @@ public class ClientServiceImpl implements ClientService {
 
 
         searchedClient = clientMapper.toEntity(clientRequestDto);
-
+        searchedClient.setId(id);
         clientRepository.save(searchedClient);
 
         ClientResponseDto clientResponseDto = clientMapper.toDto(searchedClient);

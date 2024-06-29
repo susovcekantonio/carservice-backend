@@ -4,11 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="050f0aa2-9186-4fd1-8932-a28201a1b6e8" name="Changes" comment="" />
+    <list default="true" id="050f0aa2-9186-4fd1-8932-a28201a1b6e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ericsson/sm/CarApp/dto/ClientResponseDtowithID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ericsson/sm/CarApp/config/WebConfing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericsson/sm/CarApp/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ericsson/sm/CarApp/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericsson/sm/CarApp/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ericsson/sm/CarApp/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericsson/sm/CarApp/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ericsson/sm/CarApp/service/impl/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericsson/sm/CarApp/service/impl/ClientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ericsson/sm/CarApp/service/mapper/ClientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ericsson/sm/CarApp/service/mapper/ClientMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ericsson/sm/CarApp/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ericsson/sm/CarApp/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ericsson/sm/CarApp/service/impl/ClientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ericsson/sm/CarApp/service/impl/ClientServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ericsson/sm/CarApp/service/mapper/ClientMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ericsson/sm/CarApp/service/mapper/ClientMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ericsson/sm/CarApp/service/mapper/ClientMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ericsson/sm/CarApp/service/mapper/ClientMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/ericsson/sm/CarApp/service/mapper/CarMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/ericsson/sm/CarApp/service/mapper/CarMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/ericsson/sm/CarApp/service/mapper/CarServiceMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/ericsson/sm/CarApp/service/mapper/CarServiceMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/ericsson/sm/CarApp/service/mapper/ClientMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/ericsson/sm/CarApp/service/mapper/ClientMapperImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -32,9 +60,11 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.CarAppApplication.executor": "Run",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CarAppApplication.executor": "Debug",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/carservice-main",
+    "last_opened_file_path": "E:/Faks/carservice-backend/carservice-backend/carservice-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,6 +104,8 @@
       <updated>1719429651105</updated>
       <workItem from="1719429652159" duration="2192000" />
       <workItem from="1719503166017" duration="1723000" />
+      <workItem from="1719658959074" duration="1292000" />
+      <workItem from="1719661024339" duration="10228000" />
     </task>
     <servers />
   </component>
