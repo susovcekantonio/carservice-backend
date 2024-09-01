@@ -19,17 +19,23 @@ public class ClientValidation {
     }
 
     private void validateOib(String oib) {
-        if(oib.isBlank()){
+        if (oib.isBlank()) {
             throw new GenericValidationException("OIB is blank");
         }
-        if(OibValidation.checkOIBState(oib) == 1){
-            throw new GenericValidationException("length is incorrect");
-        }
-        if(OibValidation.checkOIBState(oib) == 2){
-            throw new GenericValidationException("length is incorrect");
-        }
-        if(OibValidation.checkOIBState(oib) == 3){
-            throw new GenericValidationException("length is incorrect");
+
+        int validationResult = OibValidation.checkOIBState(oib);
+        switch (validationResult) {
+            case OibValidation.ERR_INVALID_LENGTH:
+                throw new GenericValidationException("OIB length is incorrect");
+            case OibValidation.ERR_INVALID_FORMAT:
+                throw new GenericValidationException("OIB format is incorrect");
+            case OibValidation.ERR_INVALID_CONTROL:
+                throw new GenericValidationException("OIB control digit is incorrect");
+            case OibValidation.NO_ERROR:
+                break;
+            default:
+                throw new GenericValidationException("Unknown error during OIB validation");
         }
     }
+
 }
